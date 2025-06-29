@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSE Stock Price Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="fade-in">NSE Stock Price Tracker</h1>
+        <div class="input-group">
+            <input type="text" id="tickerInput" placeholder="Enter NSE Stock Ticker (e.g., RELIANCE)">
+            <button onclick="fetchStockPrice()">Get Price</button>
+        </div>
+        <h2 id="stockPrice" class="price-display"></h2>
+        <div class="chart-container">
+            <canvas id="stockChart"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
